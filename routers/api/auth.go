@@ -1,11 +1,11 @@
 package api
 
 import (
-	"log"
 	"net/http"
 
 	"github.com/SimulatedSakura/go-gin-example/models"
 	"github.com/SimulatedSakura/go-gin-example/pkg/e"
+	"github.com/SimulatedSakura/go-gin-example/pkg/logging"
 	"github.com/SimulatedSakura/go-gin-example/pkg/util"
 	"github.com/astaxie/beego/validation"
 	"github.com/gin-gonic/gin"
@@ -41,10 +41,15 @@ func GetAuth(c *gin.Context) {
 			}
 		} else {
 			for _, err := range valid.Errors {
-				log.Panicln(err.Key, err.Value)
+				logging.Info(err.Key, err.Value)
 			}
 		}
+	} else {
+		for _, err := range valid.Errors {
+			logging.Info(err.Key, err.Value)
+		}
 	}
+
 	c.JSON(http.StatusOK, gin.H{
 		"code": code,
 		"msg":  e.GetMsg(code),

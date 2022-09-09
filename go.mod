@@ -40,6 +40,7 @@ replace (
 	github.com/SimulatedSakura/go-gin-example/middleware => ./go-application/go-gin-example/middleware
 	github.com/SimulatedSakura/go-gin-example/models => ./go-application/go-gin-example/models
 	github.com/SimulatedSakura/go-gin-example/pkg/e => ./go-application/go-gin-example/pkg/e
+	github.com/SimulatedSakura/go-gin-example/pkg/logging => ./go-application/go-gin-example/pkg/logging
 	github.com/SimulatedSakura/go-gin-example/pkg/setting => ./go-application/go-gin-example/pkg/setting
 	github.com/SimulatedSakura/go-gin-example/pkg/util => ./go-application/go-gin-example/pkg/util
 	github.com/SimulatedSakura/go-gin-example/routers => ./go-application/go-gin-example/routers

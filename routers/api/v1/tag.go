@@ -5,6 +5,7 @@ import (
 
 	"github.com/SimulatedSakura/go-gin-example/models"
 	"github.com/SimulatedSakura/go-gin-example/pkg/e"
+	"github.com/SimulatedSakura/go-gin-example/pkg/logging"
 	"github.com/SimulatedSakura/go-gin-example/pkg/setting"
 	"github.com/SimulatedSakura/go-gin-example/pkg/util"
 	"github.com/astaxie/beego/validation"
@@ -61,6 +62,10 @@ func AddTag(c *gin.Context) {
 		} else {
 			code = e.ERROR_EXIST_TAG
 		}
+	} else {
+		for _, err := range valid.Errors {
+			logging.Info(err.Key, err.Value)
+		}
 	}
 
 	c.JSON(http.StatusOK, gin.H{
@@ -106,7 +111,12 @@ func EditTag(c *gin.Context) {
 		} else {
 			code = e.ERROR_NOT_EXIST_TAG
 		}
+	} else {
+		for _, err := range valid.Errors {
+			logging.Info(err.Key, err.Value)
+		}
 	}
+
 	c.JSON(http.StatusOK, gin.H{
 		"code": code,
 		"msg":  e.GetMsg(code),
@@ -129,6 +139,11 @@ func DeleteTag(c *gin.Context) {
 		} else {
 			code = e.ERROR_NOT_EXIST_TAG
 		}
+	} else {
+		for _, err := range valid.Errors {
+			logging.Info(err.Key, err.Value)
+		}
+
 	}
 
 	c.JSON(http.StatusOK, gin.H{
