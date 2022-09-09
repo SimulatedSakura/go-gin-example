@@ -1,17 +1,22 @@
 package routers
 
 import (
+	_ "github.com/SimulatedSakura/go-gin-example/docs"
 	"github.com/SimulatedSakura/go-gin-example/middleware/jwt"
 	"github.com/SimulatedSakura/go-gin-example/pkg/setting"
 	"github.com/SimulatedSakura/go-gin-example/routers/api"
 	v1 "github.com/SimulatedSakura/go-gin-example/routers/api/v1"
 	"github.com/gin-gonic/gin"
+	ginSwagger "github.com/swaggo/gin-swagger"
+	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
+// InitRouter initialize routing information
 func InitRouter() *gin.Engine {
 	r := gin.New()
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	gin.SetMode(setting.RunMode)
 	//获取token的方法
 	r.GET("/auth", api.GetAuth)

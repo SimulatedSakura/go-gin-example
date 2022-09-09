@@ -1,0 +1,4 @@
+[INFO][main.go:30]2022/09/09 17:18:41 Actual pid is 12687
+[INFO][main.go:64]2022/09/09 17:23:35 Shutdown Server ...
+[ERROR][main.go:56]2022/09/09 17:23:35 Server err: accept tcp [::]:8000: use of closed network connection
+[FATAL][main.go:69]2022/09/09 17:23:35 Server Shutdown: invalid argument

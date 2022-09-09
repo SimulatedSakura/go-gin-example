@@ -1,0 +1,4 @@
+[INFO][main.go:30]2022/09/10 00:26:16 Actual pid is 66208
+[INFO][main.go:64]2022/09/10 00:27:08 Shutdown Server ...
+[ERROR][main.go:56]2022/09/10 00:27:08 Server err: accept tcp [::]:8000: use of closed network connection
+[INFO][main.go:72]2022/09/10 00:27:08 Server exiting

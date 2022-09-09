@@ -1,0 +1,16 @@
+[INFO][main.go:30]2022/09/09 20:51:39 Actual pid is 29150
+[ERROR][main.go:56]2022/09/09 20:52:22 Server err: accept tcp [::]:8000: use of closed network connection
+[INFO][main.go:64]2022/09/09 21:34:05 Shutdown Server ...
+[INFO][main.go:72]2022/09/09 21:34:05 Server exiting
+[INFO][main.go:30]2022/09/09 22:04:39 Actual pid is 47255
+[INFO][main.go:64]2022/09/09 22:06:50 Shutdown Server ...
+[INFO][main.go:72]2022/09/09 22:06:50 Server exiting
+[INFO][main.go:30]2022/09/09 17:23:39 Actual pid is 14265
+[INFO][article.go:146]2022/09/09 17:24:01 tag_id 标签ID必须大于0
+[INFO][article.go:146]2022/09/09 17:24:01 title 标题不能为空
+[INFO][article.go:146]2022/09/09 17:24:01 desc 简述不能为空
+[INFO][article.go:146]2022/09/09 17:24:01 content 内容不能为空
+[INFO][article.go:146]2022/09/09 17:24:01 created_by 创建人不能为空
+[INFO][main.go:64]2022/09/09 17:28:05 Shutdown Server ...
+[ERROR][main.go:56]2022/09/09 17:28:05 Server err: accept tcp [::]:8000: use of closed network connection
+[INFO][main.go:72]2022/09/09 17:28:05 Server exiting

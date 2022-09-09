@@ -1,0 +1,6 @@
+[INFO][main.go:30]2022/09/09 20:52:22 Actual pid is 29205
+[INFO][article.go:75]2022/09/09 20:52:44 state 状态只能为0或者1
+[INFO][article.go:75]2022/09/09 20:52:44 tag_id 标签ID必须大于0
+[INFO][main.go:64]2022/09/09 21:34:05 Shutdown Server ...
+[ERROR][main.go:56]2022/09/09 21:34:05 Server err: http: Server closed
+[INFO][main.go:72]2022/09/09 21:34:05 Server exiting

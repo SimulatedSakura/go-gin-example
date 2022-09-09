@@ -1,0 +1,4 @@
+[INFO][main.go:30]2022/09/10 00:37:51 Actual pid is 8193
+[INFO][main.go:64]2022/09/10 00:37:52 Shutdown Server ...
+[ERROR][main.go:56]2022/09/10 00:37:52 Server err: http: Server closed
+[FATAL][main.go:69]2022/09/10 00:37:52 Server Shutdown: invalid argument
